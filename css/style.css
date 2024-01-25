@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #F2F2F2;
+    padding: 40px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    flex: 1.4;
+    padding: 30px;
+    background-color: #FFF;
+}
+
+.form h1{
+    color: #576CBC;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: 0;
+    background-color: #F2F2F2;
+    color: #576CBC;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form textarea::placeholder{
+    color: #BABABA;
+} 
+
+.form span{
+    display: block;
+    margin: 20px 0;
+    background-color: #F2F2F2;
+    border-left: 6px solid #576CBC;
+    padding: 4px;
+    color: #576CBC;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.botoes .btnCript {
+    background-color: #576CBC;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border: 0;
+    cursor: pointer;
+    width: 45%;
+}
+
+
+.botoes .btnDescript {
+    background-color: #F2F2F2;
+    color: #576CBC;
+    border: 1px solid #576CBC;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+    cursor: pointer;
+    width: 45%;
+}
