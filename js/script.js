@@ -6,8 +6,9 @@ function criptografar(){
     if (verificaText() == ''){
         alert('digite um texto para criptografar ou descriptografar')
     }else{
-        let string = document.getElementById('texto').value;
-        let stringE = string.replaceAll("e", "enter");
+        let string = document.getElementById('texto').value.toLowerCase();
+        let stringAcentos = string.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+        let stringE = stringAcentos.replaceAll("e", "enter");
         let stringI = stringE.replaceAll("i", "imes");
         let stringA = stringI.replaceAll("a", "ai");
         let stringO = stringA.replaceAll("o", "ober");
