@@ -59,7 +59,7 @@ body{
     
 }
 
-.botoes .btnCript {
+.botoes .btnCript, .btnCopiar {
     background-color: #576CBC;
     color: #FFF;
     font-size: 18px;
@@ -69,6 +69,13 @@ body{
     cursor: pointer;
     width: 45%;
 }
+
+.btnCopiar{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
 
 
 .botoes .btnDescript {
@@ -103,11 +110,25 @@ body{
     text-align: center;
 }
 
-.result p{
-    text-align: center;
+.result .textoVazio{
     margin-bottom: 30px;
+    text-align: center;
 }
 
+
+.textResult {
+    margin: 10px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    color: #576CBC;
+    text-align: left;
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 @media (max-width: 990px){
     .result {
