@@ -16,13 +16,12 @@ function criptografar(){
         
         document.querySelector('.result').innerHTML =`
         <div class="textResult">
-        <p class="text">${stringU}</p>
-        <button type="button" class="btnCopiar">Copiar Texto</button>
+        <textarea name="textoResultado" id="textoResultado" cols="30" rows="30">${stringU}</textarea>
+        <button type="button" class="btnCopiar" onclick="copiar()">Copiar Texto</button>
         </div>
         `
     }
 }
-
 
 function descriptografar(){
     if (verificaText() == ''){
@@ -37,10 +36,17 @@ function descriptografar(){
         
         document.querySelector('.result').innerHTML =`
         <div class="textResult">
-        <p class="text">${stringU}</p>
-        <button type="button" class="btnCopiar">Copiar Texto</button>
+        <textarea name="textoResultado" id="textoResultado" cols="30" rows="30">${stringU}</textarea>
+        <button type="button" class="btnCopiar" onclick="copiar()">Copiar Texto</button>
         </div>
         `
     }
 }
 
+function copiar(){
+    console.log('nada')
+    let copiarTexto = document.querySelector('#textoResultado');
+    copiarTexto.select();
+    document.execCommand('copy')
+    alert('texto copiado com sucesso!')
+}
